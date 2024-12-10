@@ -1,0 +1,11 @@
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background-color: white;
+  cursor: url(../src/pngicons/cursor/custom-cursor.png), auto;
+}

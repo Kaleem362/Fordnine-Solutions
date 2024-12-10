@@ -1,0 +1,75 @@
+.identity-bar {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-color);
+  padding: 30px;
+  border-radius: 12px;
+  margin: 8px;
+  max-height: 90px; /* Use max-height instead of height */
+  position: relative;
+  transition: max-height 0.5s ease-in-out; /* Smooth animation for max-height */
+}
+.identity-bar h1 {
+  font-size: 32px !important;
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  color: white !important;
+  -webkit-text-stroke: 1px #222;
+}
+.identity-bar:hover {
+  max-height: 500px; /* Set to a maximum value that accommodates expanded content */
+}
+
+.identity-bar-title {
+  color: #fff;
+  font-size: 42px;
+  font-weight: bolder;
+  font-family: "Manrope", sans-serif;
+  animation: fadeIn 3s;
+  padding-bottom: 5px;
+}
+
+.identity-bar p {
+  color: white;
+  text-align: justify;
+  /* max-height: 0;  */
+  padding: 0; /* No padding */
+  overflow: hidden; /* Hide text */
+  transition: max-height 0.5s ease, padding 0.5s ease; /* Smooth animation */
+  animation: fadeIn 3s;
+}
+
+.identity-bar:hover .identity-bar p {
+  max-height: 500px !important; /* Allow full expansion */
+  padding: 10px 0; /* Add padding on hover */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.01);
+  }
+}
+@media (max-width: 414px) {
+  .identity-bar {
+    padding: 10px !important;
+    margin: 10px auto;
+    height: 70px !important;
+  }
+  .identity-bar h1 {
+    font-size: 24px !important;
+  }
+}
+
+.Number {
+  color: #222;
+  margin-right: 30px;
+  font-size: 40px !important;
+  margin-bottom: 10px !important;
+}

@@ -1,0 +1,200 @@
+* {
+  scroll-behavior: smooth;
+}
+:root {
+  --main-color: #e06339;
+  --secondary-color: #1c426f;
+  --font-size-large: 18px;
+  --padding: 10px;
+  --primary-color: rgb(192, 182, 182) !important;
+}
+.Hero-container {
+  background: linear-gradient(180deg, #222, #e06339);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  border-bottom-right-radius: 350px;
+  border-bottom-left-radius: 350px;
+  border-bottom: 2px solid white;
+  overflow: hidden;
+}
+
+.headername h1 {
+  position: relative;
+  font-family: "Manrope", sans-serif;
+  font-size: 80px;
+  color: transparent;
+  -webkit-text-stroke: 0.3vw transparent;
+  text-transform: uppercase;
+  filter: drop-shadow(2px 2px 10px #e06339);
+}
+.headername h1::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  height: 100%;
+
+  color: #fff; /* Fallback color if gradient isn't supported */
+  content: attr(data-text);
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #e06339;
+  animation: textanimate 5s linear infinite;
+  -webkit-text-stroke: 1px #fff;
+  color: #e06339;
+  background: linear-gradient(to right, #e06339, #3d5470);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-text-p {
+  font-size: 18px !important;
+  color: white;
+  -webkit-text-stroke: 0.5px #222;
+}
+
+@keyframes textanimate {
+  0% {
+    width: 0;
+  }
+  80% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+.text-centers span {
+  font-size: 60px;
+}
+
+.Parent-Hero-container {
+  background-color: white !important;
+}
+
+.headername {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+marquee {
+  font-size: 82px;
+  -webkit-text-stroke: 2px #222;
+  color: #e06339;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Manrope";
+  margin: 30px 0px;
+}
+@media screen and (max-width: 1024px) {
+  .Hero-container {
+    height: 55vh;
+    border-bottom-right-radius: 410px;
+    border-bottom-left-radius: 410px;
+  }
+  .headername h1 {
+    font-size: 90px !important;
+  }
+  .hero-text-p {
+    width: 80% !important;
+    font-size: 25px !important;
+  }
+}
+@media screen and (max-width: 820px) {
+  .Hero-container {
+    height: 55vh !important;
+    border-bottom-right-radius: 350px !important;
+    border-bottom-left-radius: 350px !important;
+  }
+  marquee {
+    font-size: 65px;
+  }
+  .headername h1 {
+    font-size: 90px !important;
+    height: 100px !important;
+  }
+  .headername {
+    padding: 0px 40px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .headername h1 {
+    font-size: 45px !important;
+  }
+  .text-white {
+    font-size: 18px !important;
+    font-weight: normal !important;
+    text-align: center;
+    width: 100% !important;
+    padding: 10px 50px !important;
+  }
+  .headername h1 {
+    font-size: 60px !important;
+  }
+  .text-white {
+    font-size: 16px !important;
+  }
+  .hero-text-p {
+    font-size: 16px !important;
+    color: white;
+    -webkit-text-stroke: 0.5px #222;
+  }
+}
+@media screen and (max-width: 414px) {
+  .headername h1 {
+    font-size: 40px !important;
+    height: 50px !important;
+  }
+  .text-white {
+    font-size: 14px !important;
+  }
+  .Parent-Hero-container {
+    height: 500px !important;
+  }
+  .Hero-container {
+    height: 90% !important;
+  }
+  .flip-card {
+    width: 150px !important;
+    height: 165px !important;
+  }
+  .card-description {
+    font-size: 1rem !important;
+  }
+  .card-title {
+    font-size: 1rem !important;
+  }
+  .hero-text-p {
+    font-size: 14px !important;
+    color: white;
+    -webkit-text-stroke: 0.5px #222;
+  }
+  marquee {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .headername h1 {
+    position: relative;
+    font-family: "Manrope", sans-serif;
+    font-size: 110px;
+    color: transparent;
+    -webkit-text-stroke: 0.3vw transparent;
+    text-transform: uppercase;
+    filter: drop-shadow(2px 2px 10px #e06339);
+  }
+  .hero-text-p {
+    font-size: 30px !important;
+    color: white;
+    -webkit-text-stroke: 1.5px #222;
+  }
+  marquee {
+    font-size: 90px;
+  }
+}

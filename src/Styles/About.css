@@ -1,0 +1,44 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #e06339;
+  --secondary-color: #1c426f;
+  --font-size-large: 18px;
+  --padding: 10px;
+  --primary-color: rgb(192, 182, 182);
+  --Image-radius: 12px;
+  --gradient-text: linear-gradient(toright, #222, #e06339) !important;
+}
+.Herotwocontainer {
+  /* background: linear-gradient(90deg, #1c426f, #e06339, #1c426f); */
+  /* background-color: white; */
+  /* background: linear-gradient(90deg, #1c426f, #fff, #1c426f); */
+  background-color: white !important;
+  overflow: hidden;
+}
+
+.Herotwocontainer h1 {
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+  color: #222 !important;
+}
+
+.Manrope {
+  font-family: "Manrope", sans-serif;
+}
+.text-justify {
+  text-align: justify;
+}
+.margin-left {
+  margin-left: 380px;
+}
+
+.paragraph-text {
+  font-size: 17px !important;
+}
+.AboutImage {
+  border-radius: var(--Image-radius) !important;
+}

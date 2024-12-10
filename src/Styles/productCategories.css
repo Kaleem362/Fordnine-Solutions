@@ -1,0 +1,197 @@
+* {
+  font-family: "Manrope", sans-serif;
+}
+.Product-container {
+  height: 500px !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.product-header h1 {
+  font-size: 52px;
+  color: white;
+  -webkit-text-stroke: 2px #e06339;
+  transition: 0.3s text-shadow ease;
+  cursor: pointer;
+  background-color: white !important;
+}
+.product-header h1:hover {
+  text-shadow: 1px 1px 10px #1c426f, 1px 1px 10px #1c426f, 1px 1px 10px #1c426f,
+    1px 1px 10px #1c426f, 1px 1px 10px #1c426f, 1px 1px 10px #1c426f,
+    1px 1px 10px #1c426f, 1px 1px 10px #1c426f, 1px 1px 10px #1c426f;
+}
+.Product-container .card {
+  position: relative;
+  width: 250px !important;
+  height: 300px !important;
+  border-radius: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  z-index: 1111;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 20px 20px 60px #222, -20px -20px 60px #222;
+  margin: 0px -5px;
+  transition: 0.5s all ease;
+}
+.card:hover {
+  box-shadow: 2px 2px 20px #222 !important;
+}
+.card:nth-child(1) {
+  position: relative;
+  z-index: 99;
+}
+.card:nth-child(2) {
+  position: relative;
+  z-index: 995;
+}
+.card:nth-child(4) {
+  position: relative;
+  z-index: 995;
+}
+.card:nth-child(5) {
+  position: relative;
+  z-index: 990;
+}
+.card:nth-child(3) {
+  position: relative;
+  z-index: 999;
+}
+
+.card:nth-child(1):hover {
+  position: relative;
+  z-index: 1000;
+}
+.card:nth-child(2):hover {
+  position: relative;
+  z-index: 1000;
+}
+.card:nth-child(3):hover {
+  position: relative;
+  z-index: 1000;
+}
+.card:nth-child(4):hover {
+  position: relative;
+  z-index: 1000;
+}
+.card:nth-child(5):hover {
+  position: relative;
+  z-index: 1000;
+}
+.bg {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 238px;
+  height: 288px;
+  z-index: 2;
+  background: linear-gradient(90deg, #e06339, #74321d);
+  backdrop-filter: blur(24px);
+  border-radius: 10px;
+  overflow: hidden;
+  /* outline: 2px solid white; */
+}
+.blob {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 250px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #e06339;
+  opacity: 1;
+  filter: blur(12px);
+  animation: blob-bounce 5s infinite ease;
+}
+
+.card h3 {
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+}
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+  }
+
+  50% {
+    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+  }
+
+  75% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+  }
+
+  100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+}
+@media (max-width: 920px) {
+  .card {
+    position: relative;
+    width: 170px !important;
+    height: 250px !important;
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    position: relative;
+    width: 130px !important;
+    height: 220px !important;
+  }
+  .bg {
+    width: 130px;
+    height: 220px;
+  }
+  .card h3 {
+    color: #fff;
+    font-size: 18px !important;
+    text-align: center !important;
+  }
+}
+@media (max-width: 520px) {
+  .card {
+    position: relative;
+    margin: auto;
+    width: 100px !important;
+    height: 200px !important;
+  }
+}
+@media (max-width: 414px) {
+  .card {
+    position: relative;
+    width: 80px !important;
+    height: 150px !important;
+    text-align: center !important;
+  }
+  .bg {
+    width: 80px !important;
+  }
+  .Product-container {
+    height: 350px !important;
+    width: 300px !important;
+    margin: auto;
+    padding: 0px 100px !important;
+  }
+  .product-header h1 {
+    font-size: 30px !important;
+  }
+  .bg {
+    width: 80px !important;
+    height: 138px;
+  }
+  .card h3 {
+    color: #fff;
+    font-size: 8px !important;
+    text-align: center !important;
+    margin: auto;
+  }
+}

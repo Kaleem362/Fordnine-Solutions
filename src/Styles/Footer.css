@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: var(--Manrope);
+}
+:root {
+  --main-color: #e06339;
+  --secondary-color: #1c426f;
+  --font-size-large: 18px;
+  --padding: 10px;
+  --primary-color: rgb(235, 225, 225);
+  --Manrope: "Manrope", sans-serif;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  background-color: #222 !important;
+  padding: 50px;
+  width: 100% !important;
+}
+.logo-container img {
+  width: 200px !important;
+}
+
+.links-box {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: flex-start;
+}
+.links-box p {
+  font-weight: bold;
+  font-size: 18px;
+}
+.links-box a {
+  color: white;
+  text-decoration: none;
+  margin: 2px 0px;
+}
+.links-box a:hover {
+  color: rgb(192, 184, 184);
+}
+.queries-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.queries-box p {
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+}
+.queries-box small {
+  color: white;
+  margin: 5px 0px;
+}
+
+.queries-box a {
+  color: white;
+}
+
+.social-media-box {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.social-media-icons {
+  display: grid;
+  grid-template-columns: 40px 40px 40px;
+  grid-template-rows: 3 50px;
+  color: white;
+  gap: 10px;
+}
+.social-media-icons a {
+  width: 30px !important;
+  height: 30px !important;
+}
+.social-media-icons img {
+  width: 30px !important;
+  height: 30px !important;
+  margin: 5px auto;
+}
+.copy-right-content {
+  background-color: #222 !important;
+  color: #e06339;
+  font-weight: bold;
+}
+.copy-right-content p {
+  text-decoration: underline;
+}
+
+@media (max-width: 414px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px !important;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}

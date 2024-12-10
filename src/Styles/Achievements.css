@@ -1,0 +1,95 @@
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+:root {
+  --main-color: #e06339;
+  --secondary-color: #1c426f;
+  --font-size-large: 18px;
+  --padding: 10px;
+  --primary-color: rgb(235, 225, 225);
+  --Manrope: "Manrope", sans-serif;
+}
+
+.Achievements-container {
+  padding: 40px 120px;
+  overflow-x: hidden;
+  background-color: white !important;
+  width: 100% !important;
+}
+.Achievements-container h1 {
+  font-size: 52px;
+  color: white;
+  -webkit-text-stroke: 2px #e06339;
+  transition: 0.3s text-shadow ease;
+  cursor: pointer;
+  width: 100% !important;
+}
+.Achievements-container h1:hover {
+  text-shadow: 1px 1px 10px #1c426f, 1px 1px 10px #1c426f, 1px 1px 10px #1c426f,
+    1px 1px 10px #1c426f, 1px 1px 10px #1c426f, 1px 1px 10px #1c426f,
+    1px 1px 10px #1c426f, 1px 1px 10px #1c426f, 1px 1px 10px #1c426f;
+}
+.image-width {
+  position: relative;
+  overflow: hidden;
+  width: 100% !important;
+  background-color: white !important;
+}
+
+.image-width img {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 100px !important;
+  background: transparent;
+}
+
+.image-width::before {
+  content: "Story Generator";
+  background: linear-gradient(90deg, #e063393f, transparent);
+  width: 100% !important;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 100px;
+  opacity: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  transition: opacity 0.3s ease;
+  font-family: var(--Manrope);
+  font-weight: bold;
+}
+
+.image-width:hover::before {
+  opacity: 1; /* Show on hover */
+  width: 100% !important;
+}
+
+.paragraph {
+  text-align: justify !important;
+  font-family: var(--Manrope);
+  width: 100% !important;
+}
+
+.custom-gap {
+  gap: 50px !important;
+}
+
+@media screen and (max-width: 414px) {
+  .Achievements-container {
+    padding: 21px !important;
+  }
+  .image-width img {
+    width: 414px !important;
+    overflow: visible !important;
+  }
+}
