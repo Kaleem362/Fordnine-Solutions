@@ -1,5 +1,5 @@
 import "../../../Styles/ServicesPage.css";
-import figmaicon from "../../../pngicons/figmaicon.png";
+import figmaIcon from "../../../pngicons/figmaIcon.png";
 import canvaicon from "../../../pngicons/canvaicon.png";
 import wordpressicon from "../../../pngicons/wordpressicon.png";
 import freelancingicon from "../../../pngicons/freelancingicon.png";
@@ -7,8 +7,6 @@ import mobileappicon from "../../../pngicons/mobileappicon.png";
 import seoicon from "../../../pngicons/seoicon.png";
 import webapplicationicon from "../../../pngicons/webapplicationicon.png";
 import promptengineeringicon from "../../../pngicons/promptengineeringicon.png";
-import { Link } from "lucide-react";
-import { Links } from "react-router-dom";
 
 function Services() {
   const services = [
@@ -34,7 +32,7 @@ function Services() {
       title: "Figma Design",
       description:
         "Create visually stunning graphics to enhance your brand identity.",
-      icon: figmaicon,
+      icon: figmaIcon,
     },
     {
       title: "Canva Design",
