@@ -129,7 +129,6 @@
   font-weight: bold;
 }
 
-/* Animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -175,4 +174,44 @@
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+#whatsappbutton:hover {
+  background-color: #222 !important;
+  color: #fff !important;
+  transition: 0.4s all ease;
+  box-shadow: 1px 1px 10px #fff;
+}
+#whatsappbutton {
+  background-color: rgb(55, 207, 55) !important;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 100px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope", sans-serif !important;
+}
+#callbutton {
+  background-color: #222 !important;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 100px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#callbutton:hover {
+  background-color: #d95332 !important;
+  /* border-radius: 50% !important; */
+  /* height: 80px !important; */
+  /* width: 80px !important; */
+  overflow: hidden;
+  color: #222 !important;
+  transition: 0.4s all ease;
+  box-shadow: 1px 1px 10px #fff;
 }

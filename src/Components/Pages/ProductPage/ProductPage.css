@@ -1,0 +1,236 @@
+:root {
+  --main-color: #e06339;
+  --secondary-color: #1c426f;
+  --font-size-large: 18px;
+  --padding: 10px;
+  --primary-color: rgb(192, 182, 182) !important;
+}
+.product-container {
+  min-height: 100vh;
+  background: linear-gradient(to right, #1c426f, #e06339);
+  color: white;
+  padding: 2rem 4rem;
+  overflow-x: hidden;
+}
+
+.header-section {
+  text-align: center;
+  padding: 4rem 0;
+  position: relative;
+}
+
+.floating-icon {
+  position: absolute;
+  animation: float 6s ease-in-out infinite;
+}
+
+.icon-1 {
+  top: 10%;
+  left: 10%;
+  animation-delay: 0s;
+}
+.icon-2 {
+  top: 20%;
+  right: 10%;
+  animation-delay: 2s;
+}
+.icon-3 {
+  bottom: 20%;
+  left: 15%;
+  animation-delay: 4s;
+}
+.icon-4 {
+  bottom: 10%;
+  right: 15%;
+  animation-delay: 1s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(10deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: white !important;
+  -webkit-text-stroke: 2px #e06339;
+  animation: titleFade 1s ease-in;
+}
+
+@keyframes titleFade {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #f0f0f0;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  animation: subtitleFade 1s ease-in 0.5s both;
+}
+
+@keyframes subtitleFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 4rem 0;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.screenshots-container {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.screenshot {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease;
+}
+
+.screenshot:hover {
+  transform: scale(1.05);
+}
+
+.screenshot-wrapper {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  animation: scroll 30s linear infinite;
+  /* Hide the scrollbar in most browsers */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+
+  /* WebKit-based browsers (Chrome, Safari, etc.) */
+  &::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+}
+.screenshot-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  60% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.screenshot-wrapper > div {
+  scroll-snap-align: center;
+  flex: 0 0 auto;
+  width: 150px;
+  height: 200px;
+  overflow: hidden;
+  overflow-x: hidden;
+  object-fit: contain;
+}
+
+.cta-button {
+  background: linear-gradient(45deg, #222, #1c426f);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  width: 240px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.cta-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 1px 1px 10px #e06339;
+}
+
+.marquee-container {
+  overflow: hidden;
+  /* white-space: nowrap; */
+  position: relative;
+  margin-top: 20px;
+  width: 100%; /* Adjust as needed */
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee 10s linear infinite;
+}
+
+.marquee-content img {
+  width: 150px; /* Adjust size as needed */
+  height: 180px;
+  margin-right: 20px;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

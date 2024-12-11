@@ -94,9 +94,7 @@ const Footer = () => {
         >
           <p>
             Designed and Developed by{" "}
-            <a href="https://kaleemullahpersonalportfolio.netlify.app/">
-              Kaleem ullah
-            </a>
+            <a href="https://Kaleem.vercel.app/">Kaleem ullah</a>
           </p>
         </div>
       </div>

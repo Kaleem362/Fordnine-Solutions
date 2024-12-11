@@ -16,6 +16,7 @@ import AboutPage from "./Components/Pages/Aboutpage/Aboutpage";
 // import ContactPage from "./Components/Pages/ContactSite/ContactPage";
 import TeamPage from "./Components/Pages/TeamPage/TeamPage";
 import Contact from "../src/Components/Pages/Contactpage/Contact";
+import ProductPage from "./Components/Pages/ProductPage/ProductPage";
 
 function App() {
   return (
@@ -74,6 +75,16 @@ function App() {
             <>
               <Navbar />
               <Contact />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="ProductPage"
+          element={
+            <>
+              <Navbar />
+              <ProductPage />
               <Footer />
             </>
           }

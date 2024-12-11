@@ -38,7 +38,7 @@ function Navbar() {
             id="navbarNav"
           >
             <ul className="navbar-nav">
-              <li className="nav-item">
+              <li className="nav-item mx-2">
                 <Link
                   className={`nav-link ${
                     activeLink === "home" ? "active" : ""
@@ -76,7 +76,7 @@ function Navbar() {
                   className={`nav-link ${
                     activeLink === "portfolio" ? "active" : ""
                   }`}
-                  to="/ProductsPage"
+                  to="/ProductPage"
                   onClick={() => handleLinkClick("portfolio")}
                 >
                   Products

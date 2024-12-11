@@ -105,37 +105,11 @@ function ContactForm() {
       <br />
       <p>OR</p>
       <div className="buttons gap-3 d-flex">
-        <a
-          href="https://wa.me/923485427362"
-          style={{
-            backgroundColor: "lightgreen",
-            textDecoration: "none",
-            padding: "10px 14px",
-            borderRadius: "12px",
-            color: "black",
-            fontWeight: "bold",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+        <a href="https://wa.me/923102722037" id="whatsappbutton">
           Whatsapp us
           <FaWhatsapp style={{ margin: "5px 10px" }} size={24} />
         </a>
-        <a
-          href="tel:+923485427362"
-          style={{
-            backgroundColor: "#222",
-            textDecoration: "none",
-            padding: "10px 20px",
-            borderRadius: "12px",
-            color: "white",
-            fontWeight: "bold",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+        <a id="callbutton" href="tel:+923102722037" className="icon">
           Call us
           <FaPhone style={{ margin: "5px 10px" }} size={24} />
         </a>
