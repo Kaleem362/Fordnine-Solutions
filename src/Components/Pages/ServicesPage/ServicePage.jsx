@@ -58,7 +58,6 @@ function Services() {
         "Master prompt engineering to craft effective prompts and optimize AI performance.",
       icon: promptengineeringicon,
     },
-    // Add other services as needed
   ];
 
   return (
