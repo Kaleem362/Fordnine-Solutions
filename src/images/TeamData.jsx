@@ -1,21 +1,46 @@
+import SirImage from "../images/developers/Sir.png";
+import asfandyar from "../images/developers/asfandyar.png";
+import Hassan from "../images/developers/Hassan.jpg";
+import faisal from "../images/developers/faisal.png";
+import naveedsiraj from "../images/developers/naveedsiraj.png";
+import amirarafat from "../images/developers/amirarafat.jpg";
+import shahreyar from "../images/developers/shahreyar.png";
+
 export const teamMembers = [
   {
     name: "Hammad Ali",
     role: "CEO & Founder",
-    image:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=200&h=200",
+    image: SirImage,
   },
   {
-    name: "Sarah Khan",
-    role: "Lead Developer",
-    image:
-      "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=200&h=200",
+    name: "Asfandyar khan",
+    role: "Software tester",
+    image: asfandyar,
   },
   {
-    name: "Ali Ahmed",
-    role: "Frontend Developer",
-    image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200&h=200",
+    name: "Shahreyar khan",
+    role: "SEO",
+    image: shahreyar,
   },
-  // 
+  {
+    name: "Muhammad Hassan",
+    role: "React Native Developer",
+    image: Hassan,
+  },
+  {
+    name: "Faisal khan",
+    role: "React Native Developer",
+    image: faisal,
+  },
+  {
+    name: "Naveed Siraj",
+    role: "React Native Developer",
+    image: naveedsiraj,
+  },
+  {
+    name: "Amir Arafat",
+    role: "Graphics Designer",
+    image: amirarafat,
+  },
+  //
 ];

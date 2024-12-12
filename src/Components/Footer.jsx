@@ -94,7 +94,12 @@ const Footer = () => {
         >
           <p>
             Designed and Developed by{" "}
-            <a href="https://Kaleem.vercel.app/">Kaleem ullah</a>
+            <a
+              href="https://Kaleem.vercel.app/"
+              className="Manrope text-decoration-none"
+            >
+              Kaleem ullah
+            </a>
           </p>
         </div>
       </div>

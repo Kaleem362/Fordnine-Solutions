@@ -86,9 +86,27 @@
   background-color: #222 !important;
   color: #e06339;
   font-weight: bold;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.developer-sign {
+  background-color: #222 !important;
+  color: #e06339;
+  font-weight: bold;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .copy-right-content p {
   text-decoration: underline;
+  margin: 0;
+}
+.developer-sign p {
+  /* text-decoration: underline; */
+  margin: 0;
 }
 
 @media (max-width: 414px) {
