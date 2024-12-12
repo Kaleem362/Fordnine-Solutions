@@ -28,14 +28,14 @@ function App() {
             <>
               <Navbar />
               <Hero />
-              <Flipcard />
-              <Achievements />
-              <TimelineCards />
-              <Services />
-              <MagicalNumbers />
-              <ProductCategories />
-              <Identity />
-              <Footer />
+              {/* <Flipcard /> */}
+              {/* <Achievements /> */}
+              {/* <TimelineCards /> */}
+              {/* <Services /> */}
+              {/* <MagicalNumbers /> */}
+              {/* <ProductCategories /> */}
+              {/* <Identity /> */}
+              {/* <Footer /> */}
             </>
           }
         />
