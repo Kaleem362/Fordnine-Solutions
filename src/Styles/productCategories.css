@@ -134,7 +134,32 @@
     transform: translate(-100%, -100%) translate3d(0, 0, 0);
   }
 }
+@media (max-width: 1024px) {
+  .Product-container {
+    width: 100% !important;
+  }
+  .Product-container .card {
+    position: relative;
+    width: 200px !important;
+    height: 250px !important;
+  }
+  .bg {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 188px !important;
+    height: 288px;
+  }
+}
 @media (max-width: 920px) {
+  .Product-container {
+    width: 100% !important;
+  }
+  .Product-container .card {
+    position: relative;
+    width: 200px !important;
+    height: 250px !important;
+  }
   .card {
     position: relative;
     width: 170px !important;

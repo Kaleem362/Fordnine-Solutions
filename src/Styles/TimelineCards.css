@@ -176,3 +176,46 @@
   font-size: 1.8rem;
   transform: rotate(0deg);
 }
+
+@media (max-width: 580px) {
+  .header h1 {
+    font-size: 40px !important;
+    color: white !important;
+    -webkit-text-stroke: 2px #e06339 !important;
+    transition: text-shadow ease 0.3s;
+    cursor: pointer;
+  }
+  .google-play-button a {
+    padding: 10px 12px;
+    font-size: 14px !important;
+  }
+  .slider-image {
+    width: fit-content;
+    height: 270px;
+  }
+}
+
+@media (max-width: 414px) {
+  .header h1 {
+    font-size: 40px !important;
+    color: white !important;
+    -webkit-text-stroke: 2px #e06339 !important;
+    transition: text-shadow ease 0.3s;
+    cursor: pointer;
+  }
+  .google-play-button a {
+    padding: 10px 12px;
+    font-size: 14px !important;
+  }
+  .slider-image {
+    width: fit-content;
+    height: 200px;
+  }
+  .imgslide {
+    display: flex;
+    gap: 20px;
+    animation: scroll 10s linear infinite;
+    /* width: max-content; */
+    width: 100% !important;
+  }
+}

@@ -106,6 +106,15 @@
     height: 190px !important;
     width: 190px !important;
     margin: 0px 10px !important;
+    line-height: 30px !important;
+  }
+  .Magical-container {
+    width: 100% !important;
+    height: 100vh !important;
+    position: relative;
+    background: linear-gradient(-180deg, var(--main-color), #222);
+    border-radius: 230px 230px 0px 0px !important;
+    overflow: hidden;
   }
   .container-one {
     margin-top: 30px !important;
@@ -123,6 +132,32 @@
   }
   .numbercircles {
     font-size: 40px !important;
+  }
+}
+@media screen and (max-width: 580px) {
+  .numbercircles {
+    /* font-size: 50px !important; */
+    border-radius: 50% !important;
+    height: 150px !important;
+    width: 150px !important;
+    margin: 0px 5px !important;
+    line-height: 50px;
+    font-size: 42px !important;
+    font-size: 26px !important;
+    font-weight: bold !important;
+    line-height: 25px;
+  }
+  .Magical-container h1 {
+    font-size: 40px !important;
+  }
+
+  .Magical-container {
+    height: 100vh !important;
+    border-top-left-radius: 150px !important;
+    border-top-right-radius: 150px !important;
+  }
+  .container-one {
+    padding: 100px 50px !important;
   }
 }
 @media screen and (max-width: 576px) {
@@ -161,21 +196,25 @@
 }
 @media screen and (max-width: 414px) {
   .numbercircles {
-    font-size: 50px !important;
+    font-size: 20px !important;
     border-radius: 50% !important;
     height: 115px !important;
     width: 115px !important;
+    line-height: 20px !important;
+    font-weight: bold;
     margin: 0px 5px !important;
   }
   .Magical-container h1 {
     font-size: 32px !important;
   }
-  .numbercircles {
+  /* .numbercircles {
     font-size: 20px !important;
     font-weight: bold !important;
-  }
+  } */
   .Magical-container {
-    height: 40vh !important;
+    height: 70vh !important;
+    border-top-left-radius: 150px !important;
+    border-top-right-radius: 150px !important;
   }
   .container-one {
     padding: 100px 50px !important;
