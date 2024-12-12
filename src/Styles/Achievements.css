@@ -21,9 +21,9 @@
   width: 100% !important;
 }
 .Achievements-container h1 {
-  font-size: 52px;
-  color: white;
-  -webkit-text-stroke: 2px #e06339;
+  font-size: 52px !important;
+  color: #e06339;
+  -webkit-text-stroke: 2px #1c426f;
   transition: 0.3s text-shadow ease;
   cursor: pointer;
   width: 100% !important;

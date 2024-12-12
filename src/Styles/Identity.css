@@ -1,22 +1,29 @@
+:root {
+  --main-color: #e06339;
+  --secondary-color: #1c426f;
+  --font-size-large: 18px;
+  --padding: 10px;
+  --primary-color: rgb(192, 182, 182) !important;
+}
 .identity-bar {
   width: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background-color: var(--main-color);
+  background-color: var(--secondary-color);
   padding: 30px;
-  border-radius: 12px;
+  /* border-radius: 12px; */
   margin: 8px;
-  max-height: 90px; /* Use max-height instead of height */
+  max-height: 110px; /* Use max-height instead of height */
   position: relative;
   transition: max-height 0.5s ease-in-out; /* Smooth animation for max-height */
 }
 .identity-bar h1 {
-  font-size: 32px !important;
+  font-size: 52px !important;
   display: flex !important;
   justify-content: flex-start !important;
   align-items: center !important;
-  color: white !important;
+  color: #e06339 !important;
   -webkit-text-stroke: 1px #222;
 }
 .identity-bar:hover {
@@ -68,8 +75,9 @@
 }
 
 .Number {
-  color: #222;
+  color: #fff;
   margin-right: 30px;
-  font-size: 40px !important;
-  margin-bottom: 10px !important;
+  font-size: 50px !important;
+  margin-bottom: 5px !important;
+  margin-top: 5px !important;
 }

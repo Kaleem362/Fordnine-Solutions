@@ -39,8 +39,8 @@ h1 {
 }
 
 h2 {
-  color: #fff;
-  -webkit-text-stroke: 1px #e06339;
+  color: #e06339;
+  -webkit-text-stroke: 1px #1c426f;
   font-size: 42px !important;
   animation: fadeIn 3s;
 }

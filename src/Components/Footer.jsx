@@ -73,11 +73,14 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div
+      <div className="copy-right">
+        <p className="text-white">All rights reserved</p>
+      </div>
+      {/* <div
         className="footer-text d-flex justify-content-center align-items-center"
-        style={{ backgroundColor: "#222", gap: "600px" }}
+        style={{ gap: "600px" }}
       >
-        <div className="copy-right-content" style={{ backgroundColor: "#222" }}>
+        <div className="copy-right-content">
           <p>
             All Rights Reserved -- &#169;{" "}
             <span>
@@ -88,7 +91,6 @@ const Footer = () => {
         <div
           className="developer-sign"
           style={{
-            backgroundColor: "#222",
             color: "white",
           }}
         >
@@ -102,7 +104,7 @@ const Footer = () => {
             </a>
           </p>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

@@ -10,8 +10,8 @@
 }
 .product-header h1 {
   font-size: 52px;
-  color: white;
-  -webkit-text-stroke: 2px #e06339;
+  color: #e06339;
+  -webkit-text-stroke: 2px #1c426f;
   transition: 0.3s text-shadow ease;
   cursor: pointer;
   background-color: white !important;
@@ -61,7 +61,6 @@
   position: relative;
   z-index: 999;
 }
-
 .card:nth-child(1):hover {
   position: relative;
   z-index: 1000;
@@ -89,7 +88,7 @@
   width: 238px;
   height: 288px;
   z-index: 2;
-  background: linear-gradient(90deg, #e06339, #74321d);
+  background: linear-gradient(90deg, #1c426f, #e06339);
   backdrop-filter: blur(24px);
   border-radius: 10px;
   overflow: hidden;
@@ -103,7 +102,7 @@
   width: 250px;
   height: 300px;
   border-radius: 50%;
-  background-color: #e06339;
+  background-color: #1c426f;
   opacity: 1;
   filter: blur(12px);
   animation: blob-bounce 5s infinite ease;
@@ -112,6 +111,7 @@
 .card h3 {
   color: #fff;
   font-family: "Manrope", sans-serif;
+  font-size: 12px !important;
 }
 @keyframes blob-bounce {
   0% {
@@ -150,6 +150,11 @@
     width: 188px !important;
     height: 288px;
   }
+  .Product-container .card h3 {
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px !important;
+  }
 }
 @media (max-width: 920px) {
   .Product-container {
@@ -160,38 +165,61 @@
     width: 200px !important;
     height: 250px !important;
   }
+  .Product-container .card h3 {
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-size: 15px !important;
+  }
   .card {
     position: relative;
-    width: 170px !important;
+    width: 150px !important;
     height: 250px !important;
   }
 }
-@media (max-width: 768px) {
-  .card {
+@media screen and (max-width: 768px) {
+  .Product-container .card {
     position: relative;
-    width: 130px !important;
-    height: 220px !important;
+    width: 140px !important;
+    height: 250px !important;
   }
   .bg {
-    width: 130px;
-    height: 220px;
+    width: 128px !important;
+    height: 238px !important;
   }
   .card h3 {
     color: #fff;
     font-size: 18px !important;
     text-align: center !important;
   }
+  .blob {
+    width: 100px !important;
+    height: 250px !important;
+  }
+  .Product-container .card h3 {
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px !important;
+  }
 }
 @media (max-width: 520px) {
-  .card {
+  .Product-container .card {
     position: relative;
     margin: auto;
-    width: 100px !important;
-    height: 200px !important;
+    width: 80px !important;
+    height: 180px !important;
+  }
+  .bg {
+    width: 68px !important;
+    height: 170px !important;
+  }
+  .Product-container .card h3 {
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px !important;
   }
 }
 @media (max-width: 414px) {
-  .card {
+  .Product-container .card {
     position: relative;
     width: 80px !important;
     height: 150px !important;
@@ -202,7 +230,7 @@
   }
   .Product-container {
     height: 350px !important;
-    width: 300px !important;
+    width: 100% !important;
     margin: auto;
     padding: 0px 100px !important;
   }

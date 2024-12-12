@@ -9,7 +9,7 @@
   --primary-color: rgb(192, 182, 182) !important;
 }
 .Hero-container {
-  background: linear-gradient(180deg, #222, #e06339);
+  background: linear-gradient(180deg, #222, #1c426f);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +23,7 @@
 .headername h1 {
   position: relative;
   font-family: "Manrope", sans-serif;
-  font-size: 80px;
+  font-size: 75px !important;
   color: transparent;
   -webkit-text-stroke: 0.3vw transparent;
   text-transform: uppercase;
@@ -50,8 +50,8 @@
   -webkit-text-fill-color: transparent;
 }
 .hero-text-p {
-  font-size: 18px !important;
-  color: white;
+  font-size: 20px !important;
+  color: #e06339 !important;
   -webkit-text-stroke: 0.5px #222;
 }
 
@@ -84,7 +84,7 @@
 }
 marquee {
   font-size: 82px;
-  -webkit-text-stroke: 2px #222;
+  -webkit-text-stroke: 2px #1c426f;
   color: #e06339;
   text-transform: uppercase;
   font-weight: bold;

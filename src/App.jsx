@@ -34,8 +34,8 @@ function App() {
               <Services />
               <MagicalNumbers />
               <ProductCategories />
-              {/* <Identity /> */}
-              {/* <Footer /> */}
+              <Identity />
+              <Footer />
             </>
           }
         />
