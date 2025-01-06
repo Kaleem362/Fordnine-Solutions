@@ -11,7 +11,7 @@ function ContactForm() {
     message: "",
   });
 
-  const [status, setStatus] = useState("");
+  const [status, setStatus] = useState(true); // Null for no message, true for success, false for error
 
   const handleChange = (e) => {
     setFormData({
@@ -25,26 +25,32 @@ function ContactForm() {
 
     emailjs
       .sendForm(
-        "service_fordnine", // Replace with your EmailJS service ID
-        "template_xyz123", // Replace with your EmailJS template ID
+        "service_sjbzq1a", // Replace with your EmailJS service ID
+        "template_kwn2dnv", // Replace with your EmailJS template ID
         e.target,
-        "user_abcdef123456" // Replace with your EmailJS user ID
+        "TN_SsrQLJSJwg7m9V" // Replace with your EmailJS public key
       )
       .then(
         () => {
-          setStatus("Message sent successfully!");
+          setStatus(true); // Success
+          setTimeout(() => {
+            setStatus(null); // Reset after 3 seconds
+          }, 3000);
           setFormData({ name: "", email: "", subject: "", message: "" });
         },
         (error) => {
-          setStatus("Failed to send message. Please try again.");
           console.error("Error sending email:", error);
+          setStatus(false); // Error
+          setTimeout(() => {
+            setStatus(null); // Reset after 3 seconds
+          }, 3000);
         }
       );
   };
 
   return (
     <div className="contact-form-container">
-      <div className="first-div ">
+      <div className="first-div">
         <div className="contact-header">
           <h2 className="text-start">Contact Fordnine Solutions</h2>
           <p className="text-start">
@@ -52,6 +58,34 @@ function ContactForm() {
             as soon as possible.
           </p>
         </div>
+
+        {status === true && (
+          <div class="modern-success-message">
+            <button class="close-btn" onClick={() => setStatus(false)}>
+              ×
+            </button>
+            <div class="icon-wrapper">
+              <svg
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="success-icon"
+              >
+                <path d="M9 12l2 2 4-4"></path>
+                <circle r="10" cy="12" cx="12"></circle>
+              </svg>
+            </div>
+            <div class="text-wrapper">
+              <div class="title">Success</div>
+              <div class="message">Email Sent successfully</div>
+            </div>
+          </div>
+        )}
+
         <form onSubmit={handleSubmit} className="contact-form mx-auto">
           <div className="form-group">
             <label>Name</label>
@@ -69,7 +103,7 @@ function ContactForm() {
             <input
               type="email"
               name="email"
-              placeholder="Enter Valid Email ..."
+              placeholder="Enter valid email..."
               value={formData.email}
               onChange={handleChange}
               required
@@ -80,7 +114,7 @@ function ContactForm() {
             <input
               type="text"
               name="subject"
-              placeholder="Enter Subject ..."
+              placeholder="Enter subject..."
               value={formData.subject}
               onChange={handleChange}
               required
@@ -90,7 +124,7 @@ function ContactForm() {
             <label>Message</label>
             <textarea
               name="message"
-              placeholder="Enter Your concern..."
+              placeholder="Enter your concern..."
               value={formData.message}
               onChange={handleChange}
               required
@@ -102,9 +136,7 @@ function ContactForm() {
             value="Send Message"
             className="submit-button"
           />
-          {status && <p className="status-message">{status}</p>}
         </form>
-
         <br />
         <p className="text-center fs-5 my-2">OR</p>
         <div className="buttons gap-3 d-flex justify-content-center">
@@ -119,7 +151,7 @@ function ContactForm() {
         </div>
       </div>
       <div className="second-div">
-        <h2 className="contact-header">Why Contact us ?</h2>
+        <h2 className="contact-header">Why Contact us?</h2>
         <p>
           At FORD9 Solutions, we are dedicated to providing innovative and
           reliable solutions tailored to your needs. Whether you're seeking

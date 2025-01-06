@@ -5,7 +5,7 @@
   --padding: 10px;
   --primary-color: rgb(192, 182, 182) !important;
 }
-/* Contact Form Styles */
+
 .contact-form-container {
   min-height: 100vh;
   padding: 2rem;
@@ -35,8 +35,8 @@
   opacity: 0.8;
 }
 
-/* Form Styling */
 .contact-form {
+  position: relative;
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
   padding: 2rem;
@@ -46,6 +46,7 @@
   max-width: 600px;
   animation: boomIn 0.8s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
+
 .first-div {
   width: 100% !important;
   padding: 20px 50px !important;
@@ -215,11 +216,102 @@
 }
 #callbutton:hover {
   background-color: #d95332 !important;
-  /* border-radius: 50% !important; */
-  /* height: 80px !important; */
-  /* width: 80px !important; */
+
   overflow: hidden;
   color: #222 !important;
   transition: 0.4s all ease;
   box-shadow: 1px 1px 10px #fff;
+}
+
+.modern-success-message {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background: linear-gradient(135deg, #d95332, #222);
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  z-index: 999;
+  top: 50;
+  left: 50;
+  overflow: hidden;
+  width: 400px;
+
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.modern-success-message:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.close-btn:hover {
+  opacity: 1;
+}
+
+.icon-wrapper {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.success-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.text-wrapper .title {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: white !important;
+  -webkit-text-stroke: 1px #222;
+}
+
+.text-wrapper .message {
+  margin-top: 6px;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.modern-success-message::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  transform: rotate(45deg);
+  transition: all 0.5s ease-in-out;
+}
+
+.modern-success-message:hover::before {
+  transform: rotate(90deg);
+  opacity: 0.5;
 }
