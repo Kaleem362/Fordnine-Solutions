@@ -111,7 +111,9 @@
 .card h3 {
   color: #fff;
   font-family: "Manrope", sans-serif;
-  font-size: 12px !important;
+  font-size: 18px !important;
+  margin: auto;
+  font-weight: bold;
 }
 @keyframes blob-bounce {
   0% {

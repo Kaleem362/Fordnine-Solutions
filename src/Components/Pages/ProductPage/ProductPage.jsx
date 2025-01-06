@@ -16,7 +16,7 @@ import "./ProductPage.css";
 const ProductPage = () => {
   const screenshotRef = useRef(null);
   const [screenshots, setScreenshots] = useState([]);
-  //import images using import.meta.glob method , from the directory
+
   useEffect(() => {
     const importScreenshots = async () => {
       const images = import.meta.glob("/public/ProductImages/*.png", {
@@ -77,7 +77,6 @@ const ProductPage = () => {
 
   return (
     <div className="product-container">
-      {/* Floating Icons */}
       <div className="floating-icon icon-1">
         <Smartphone size={28} />
       </div>

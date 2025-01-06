@@ -18,7 +18,6 @@ import sixteen from "../images/choosenimagesforslides/16.png";
 import seventeen from "../images/choosenimagesforslides/17.png";
 
 function ImageSlider() {
-  // Dynamically require images
   const images = [
     two,
     three,

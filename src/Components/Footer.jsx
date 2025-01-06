@@ -26,7 +26,7 @@ const Footer = () => {
           <a rel="stylesheet" href="/TeamPage">
             Team
           </a>
-          <a rel="stylesheet" href="/ProductsPage">
+          <a rel="stylesheet" href="/ProductPage">
             Products
           </a>
           <a rel="stylesheet" href="/ServicesPage">
@@ -76,35 +76,6 @@ const Footer = () => {
       <div className="copy-right">
         <p className="text-white">All rights reserved</p>
       </div>
-      {/* <div
-        className="footer-text d-flex justify-content-center align-items-center"
-        style={{ gap: "600px" }}
-      >
-        <div className="copy-right-content">
-          <p>
-            All Rights Reserved -- &#169;{" "}
-            <span>
-              -- Ford9 <span style={{ fontSize: "16px" }}>Solutions</span>
-            </span>
-          </p>
-        </div>
-        <div
-          className="developer-sign"
-          style={{
-            color: "white",
-          }}
-        >
-          <p>
-            Designed and Developed by{" "}
-            <a
-              href="https://Kaleem.vercel.app/"
-              className="Manrope text-decoration-none"
-            >
-              Kaleem ullah
-            </a>
-          </p>
-        </div>
-      </div> */}
     </>
   );
 };

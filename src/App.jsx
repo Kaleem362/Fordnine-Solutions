@@ -13,7 +13,6 @@ import Footer from "./Components/Footer";
 import Servicepage from "./Components/Pages/ServicesPage/ServicePage";
 import { Routes, Route } from "react-router-dom";
 import AboutPage from "./Components/Pages/Aboutpage/Aboutpage";
-// import ContactPage from "./Components/Pages/ContactSite/ContactPage";
 import TeamPage from "./Components/Pages/TeamPage/TeamPage";
 import Contact from "../src/Components/Pages/Contactpage/Contact";
 import ProductPage from "./Components/Pages/ProductPage/ProductPage";

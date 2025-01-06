@@ -25,10 +25,10 @@ function ContactForm() {
 
     emailjs
       .sendForm(
-        "your_service_id", // Replace with your EmailJS service ID
-        "your_template_id", // Replace with your EmailJS template ID
+        "service_fordnine", // Replace with your EmailJS service ID
+        "template_xyz123", // Replace with your EmailJS template ID
         e.target,
-        "your_user_id" // Replace with your EmailJS user ID
+        "user_abcdef123456" // Replace with your EmailJS user ID
       )
       .then(
         () => {
@@ -37,6 +37,7 @@ function ContactForm() {
         },
         (error) => {
           setStatus("Failed to send message. Please try again.");
+          console.error("Error sending email:", error);
         }
       );
   };

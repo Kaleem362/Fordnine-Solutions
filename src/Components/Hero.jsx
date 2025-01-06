@@ -10,7 +10,6 @@ function Hero() {
             FORD9 SOLUTIONS
           </h1>
         </div>
-        {/* <span className="second-text">For your Business !</span> */}
         <p className="Manrope w-50 text-center text-white fw-bold hero-text-p">
           we transform ideas into impactful digital solutions that drive growth
           and efficiency. Our expertise empowers businesses to thrive in a
